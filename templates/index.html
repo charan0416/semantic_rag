@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>RAG Chatbot</h1>
+
+        <div class="section">
+            <h2>Upload Document</h2>
+            <input type="file" id="fileInput">
+            <button id="uploadButton">Upload & Ingest File</button>
+            <p id="uploadStatus" class="status-message"></p>
+        </div>
+
+        <div class="section">
+            <h2>Re-Ingest All Documents</h2>
+            <p>This will re-process all documents currently in the 'documents' folder.</p>
+            <button id="reIngestButton">Re-Ingest All</button>
+            <p id="reIngestStatus" class="status-message"></p>
+        </div>
+
+        <div class="section">
+            <h2>Chat</h2>
+            <div id="chatbox">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="userInput" placeholder="Ask a question...">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+--- END OF FILE templates/index.html ---

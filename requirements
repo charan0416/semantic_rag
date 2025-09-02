@@ -1,0 +1,14 @@
+Flask==3.1.0
+langchain==0.1.16
+langchain-community==0.0.36
+langchain-openai==0.0.6           # ✅ Required for OpenAIEmbeddings
+langchain-text-splitters==0.0.1
+faiss-cpu==1.10.0
+openai==1.75.0                    # ✅ Matches langchain-openai
+python-dotenv==1.1.0
+requests==2.32.3
+tqdm==4.67.1
+typing-extensions==4.13.2
+tiktoken==0.6.0
+pypdf==3.17.4
+docx2txt==0.8
